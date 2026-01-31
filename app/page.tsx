@@ -7,48 +7,36 @@ export default function Home() {
 
   const services = [
     {
-      title: "Agent Setup",
-      description: "We deploy and configure your custom AI agent with your preferred platforms and integrations.",
+      title: "Deploy & Configure",
+      description: "Get your AI agent up and running in 24 hours with all your favorite integrations.",
       icon: "🚀",
+      color: "from-orange-400 to-pink-500",
     },
     {
       title: "Custom Skills",
-      description: "Build specialized capabilities tailored to your workflows—from data analysis to customer support.",
-      icon: "🧠",
+      description: "Teach your agent exactly what you need—from data analysis to customer support.",
+      icon: "✨",
+      color: "from-violet-400 to-purple-500",
     },
     {
-      title: "Integration",
-      description: "Connect your agent to Slack, Discord, Telegram, email, calendars, CRMs, and more.",
-      icon: "🔗",
+      title: "Connect Everything",
+      description: "Slack, Discord, Telegram, email, calendars, CRMs—your agent works everywhere.",
+      icon: "🔌",
+      color: "from-cyan-400 to-blue-500",
     },
     {
-      title: "Ongoing Support",
-      description: "24/7 monitoring, updates, and optimization to keep your agent performing at its best.",
+      title: "We Handle It",
+      description: "24/7 monitoring, updates, and optimization. You focus on your business.",
       icon: "🛡️",
+      color: "from-emerald-400 to-teal-500",
     },
   ];
 
   const features = [
-    {
-      title: "24/7 Availability",
-      description: "Your AI agent never sleeps. Handle requests, answer questions, and execute tasks around the clock.",
-      icon: "⏰",
-    },
-    {
-      title: "Multi-Platform",
-      description: "One agent, everywhere. Deploy across Telegram, Discord, Slack, web, SMS, and custom apps.",
-      icon: "📱",
-    },
-    {
-      title: "Custom Skills",
-      description: "From web scraping to API integrations to file processing—your agent does exactly what you need.",
-      icon: "⚡",
-    },
-    {
-      title: "Memory & Context",
-      description: "Agents remember conversations, learn preferences, and maintain context across sessions.",
-      icon: "💾",
-    },
+    { title: "Never Sleeps", desc: "24/7 availability", icon: "🌙" },
+    { title: "Everywhere", desc: "All platforms", icon: "🌍" },
+    { title: "Remembers", desc: "Full context", icon: "🧠" },
+    { title: "Takes Action", desc: "Real tasks", icon: "⚡" },
   ];
 
   const pricing = [
@@ -56,15 +44,8 @@ export default function Home() {
       name: "Starter",
       price: "$299",
       period: "/mo",
-      description: "Perfect for individuals and small teams getting started with AI agents.",
-      features: [
-        "1 AI Agent",
-        "2 Platform Integrations",
-        "5 Custom Skills",
-        "10K messages/month",
-        "Email Support",
-        "Basic Analytics",
-      ],
+      description: "Perfect for getting started",
+      features: ["1 AI Agent", "2 Integrations", "5 Skills", "10K msgs/mo", "Email Support"],
       cta: "Get Started",
       highlighted: false,
     },
@@ -72,16 +53,8 @@ export default function Home() {
       name: "Pro",
       price: "$599",
       period: "/mo",
-      description: "For growing businesses that need more power and flexibility.",
-      features: [
-        "3 AI Agents",
-        "Unlimited Integrations",
-        "20 Custom Skills",
-        "100K messages/month",
-        "Priority Support",
-        "Advanced Analytics",
-        "Custom Training",
-      ],
+      description: "For growing teams",
+      features: ["3 AI Agents", "Unlimited Integrations", "20 Skills", "100K msgs/mo", "Priority Support", "Analytics"],
       cta: "Start Free Trial",
       highlighted: true,
     },
@@ -89,66 +62,37 @@ export default function Home() {
       name: "Enterprise",
       price: "Custom",
       period: "",
-      description: "For organizations with complex needs and high-volume requirements.",
-      features: [
-        "Unlimited Agents",
-        "Unlimited Everything",
-        "Dedicated Account Manager",
-        "Custom Model Fine-tuning",
-        "On-premise Options",
-        "SLA Guarantee",
-        "White-label Available",
-      ],
+      description: "For large organizations",
+      features: ["Unlimited Agents", "Everything Unlimited", "Dedicated Manager", "On-premise Option", "SLA"],
       cta: "Contact Sales",
       highlighted: false,
     },
   ];
 
   const faqs = [
-    {
-      question: "What exactly is an AI agent?",
-      answer: "An AI agent is an autonomous AI assistant that can execute tasks, access tools, remember context, and work across multiple platforms. Unlike basic chatbots, agents can take actions—browse the web, send emails, manage calendars, process files, and integrate with your existing tools.",
-    },
-    {
-      question: "How long does it take to set up an agent?",
-      answer: "Most basic setups are completed within 24-48 hours. Custom skill development and complex integrations typically take 1-2 weeks depending on scope. We'll provide a clear timeline during your onboarding call.",
-    },
-    {
-      question: "What platforms can my agent work on?",
-      answer: "We support Telegram, Discord, Slack, Microsoft Teams, WhatsApp, SMS, email, and custom web interfaces. Your agent can work on multiple platforms simultaneously with consistent memory and context.",
-    },
-    {
-      question: "Is my data secure?",
-      answer: "Absolutely. We use enterprise-grade encryption, SOC 2 compliant infrastructure, and never train on your data. You can also opt for on-premise deployment with our Enterprise plan.",
-    },
-    {
-      question: "Can I try before committing?",
-      answer: "Yes! Our Pro plan includes a 14-day free trial. You can also book a demo call to see exactly how an agent would work for your specific use case.",
-    },
-    {
-      question: "What happens if I need help?",
-      answer: "Starter plans include email support with 24-hour response times. Pro and Enterprise plans get priority support with dedicated Slack channels and direct access to our engineering team.",
-    },
+    { q: "What's an AI agent?", a: "An autonomous AI that actually does things—sends emails, books meetings, processes data, talks to customers. Not just a chatbot." },
+    { q: "How fast to set up?", a: "Basic setup: 24-48 hours. Custom skills: 1-2 weeks. We'll give you a clear timeline." },
+    { q: "Is my data safe?", a: "Enterprise-grade encryption, SOC 2 compliant. We never train on your data. On-premise available." },
+    { q: "Can I try first?", a: "Yes! 14-day free trial on Pro. Or book a demo to see it in action." },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-sky-50 text-gray-900">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-lg border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-100">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-violet-500 to-cyan-500 rounded-lg flex items-center justify-center font-bold text-sm">
-                RA
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-gradient-to-br from-orange-400 to-pink-500 rounded-2xl flex items-center justify-center font-bold text-white text-lg shadow-lg shadow-orange-200">
+                R
               </div>
-              <span className="text-xl font-bold">RobertAI</span>
+              <span className="text-xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">RobertAI</span>
             </div>
             <div className="hidden md:flex items-center gap-8">
-              <a href="#services" className="text-slate-300 hover:text-white transition">Services</a>
-              <a href="#features" className="text-slate-300 hover:text-white transition">Features</a>
-              <a href="#pricing" className="text-slate-300 hover:text-white transition">Pricing</a>
-              <a href="#faq" className="text-slate-300 hover:text-white transition">FAQ</a>
-              <a href="#contact" className="bg-gradient-to-r from-violet-600 to-cyan-600 px-4 py-2 rounded-lg font-medium hover:opacity-90 transition">
+              <a href="#services" className="text-gray-600 hover:text-gray-900 transition font-medium">Services</a>
+              <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition font-medium">Pricing</a>
+              <a href="#faq" className="text-gray-600 hover:text-gray-900 transition font-medium">FAQ</a>
+              <a href="#contact" className="bg-gradient-to-r from-orange-400 to-pink-500 text-white px-5 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-orange-200 transition-all hover:-translate-y-0.5">
                 Get Started
               </a>
             </div>
@@ -157,87 +101,88 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 mb-6">
-            <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-            <span className="text-sm text-slate-300">Now with GPT-4, Claude, and custom models</span>
-          </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            AI Agents That Actually
-            <span className="bg-gradient-to-r from-violet-400 via-cyan-400 to-emerald-400 bg-clip-text text-transparent"> Work For You</span>
-          </h1>
-          <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10">
-            We build, deploy, and manage custom AI agents that automate your workflows, 
-            handle customer support, and integrate with all your tools—so you can focus on what matters.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact" className="bg-gradient-to-r from-violet-600 to-cyan-600 px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition shadow-lg shadow-violet-500/25">
-              Start Building Your Agent →
-            </a>
-            <a href="#features" className="bg-slate-800 border border-slate-700 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-slate-700 transition">
-              See How It Works
-            </a>
-          </div>
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white">150+</div>
-              <div className="text-slate-400">Agents Deployed</div>
+      <section className="pt-32 pb-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center max-w-4xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-100 to-pink-100 rounded-full px-4 py-2 mb-8">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+              </span>
+              <span className="text-sm font-medium text-gray-700">Now with GPT-4o, Claude & Gemini</span>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white">10M+</div>
-              <div className="text-slate-400">Messages Processed</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white">99.9%</div>
-              <div className="text-slate-400">Uptime</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white">24/7</div>
-              <div className="text-slate-400">Availability</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">What We Do</h2>
-            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-              From initial setup to ongoing optimization, we handle everything so your AI agent delivers real results.
+            
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-[1.1] tracking-tight">
+              Your AI employee
+              <br />
+              <span className="bg-gradient-to-r from-orange-400 via-pink-500 to-violet-500 bg-clip-text text-transparent">that never sleeps</span>
+            </h1>
+            
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+              We build AI agents that actually work—handling support, automating tasks, 
+              and integrating with everything you use. Set it up once, let it run forever.
             </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="#contact" className="group bg-gradient-to-r from-orange-400 to-pink-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl shadow-orange-200 hover:shadow-2xl hover:shadow-orange-300 transition-all hover:-translate-y-1">
+                Start Building 
+                <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+              <a href="#services" className="bg-white border-2 border-gray-200 px-8 py-4 rounded-2xl font-semibold text-lg hover:border-gray-300 hover:bg-gray-50 transition">
+                See How It Works
+              </a>
+            </div>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service, i) => (
-              <div key={i} className="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 hover:border-violet-500/50 transition group">
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold mb-2 group-hover:text-violet-400 transition">{service.title}</h3>
-                <p className="text-slate-400">{service.description}</p>
+
+          {/* Stats */}
+          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+            {[
+              { num: "150+", label: "Agents Live" },
+              { num: "10M+", label: "Messages" },
+              { num: "99.9%", label: "Uptime" },
+              { num: "24/7", label: "Always On" },
+            ].map((stat, i) => (
+              <div key={i} className="text-center p-4 bg-white rounded-2xl shadow-sm border border-gray-100">
+                <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">{stat.num}</div>
+                <div className="text-gray-500 text-sm mt-1">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      {/* What makes it different */}
+      <section className="py-16 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {features.map((f, i) => (
+              <div key={i} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition text-center">
+                <div className="text-3xl mb-2">{f.icon}</div>
+                <div className="font-semibold text-gray-900">{f.title}</div>
+                <div className="text-sm text-gray-500">{f.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Built Different</h2>
-            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-              These aren't basic chatbots. Our agents are autonomous assistants that actually get things done.
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">How it works</h2>
+            <p className="text-gray-600 text-lg max-w-xl mx-auto">
+              From setup to maintenance, we handle everything.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            {features.map((feature, i) => (
-              <div key={i} className="flex gap-5 p-6 bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-slate-700 rounded-2xl">
-                <div className="text-4xl shrink-0">{feature.icon}</div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-slate-400">{feature.description}</p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {services.map((service, i) => (
+              <div key={i} className="group bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
+                <div className={`w-14 h-14 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center text-2xl mb-5 shadow-lg group-hover:scale-110 transition-transform`}>
+                  {service.icon}
                 </div>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">{service.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{service.description}</p>
               </div>
             ))}
           </div>
@@ -245,42 +190,39 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
-        <div className="max-w-7xl mx-auto">
+      <section id="pricing" className="py-20 px-6 bg-gradient-to-b from-white to-amber-50/50">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
-            <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-              No hidden fees. No surprises. Just powerful AI agents at a price that makes sense.
-            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Simple pricing</h2>
+            <p className="text-gray-600 text-lg">No surprises. Cancel anytime.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {pricing.map((plan, i) => (
               <div 
                 key={i} 
-                className={`relative rounded-2xl p-8 ${
+                className={`relative rounded-3xl p-8 transition-all ${
                   plan.highlighted 
-                    ? 'bg-gradient-to-b from-violet-600/20 to-cyan-600/20 border-2 border-violet-500' 
-                    : 'bg-slate-800/50 border border-slate-700'
+                    ? 'bg-gradient-to-br from-orange-400 to-pink-500 text-white shadow-2xl shadow-orange-200 scale-105' 
+                    : 'bg-white border border-gray-200 hover:shadow-lg'
                 }`}
               >
                 {plan.highlighted && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-violet-600 to-cyan-600 px-4 py-1 rounded-full text-sm font-medium">
-                    Most Popular
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-orange-500 px-4 py-1 rounded-full text-sm font-bold shadow-md">
+                    Popular
                   </div>
                 )}
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
-                  <div className="flex items-baseline justify-center gap-1">
+                <div className="mb-6">
+                  <h3 className={`text-lg font-semibold mb-1 ${plan.highlighted ? 'text-white/90' : 'text-gray-600'}`}>{plan.name}</h3>
+                  <div className="flex items-baseline gap-1">
                     <span className="text-4xl font-bold">{plan.price}</span>
-                    <span className="text-slate-400">{plan.period}</span>
+                    <span className={plan.highlighted ? 'text-white/70' : 'text-gray-400'}>{plan.period}</span>
                   </div>
-                  <p className="text-slate-400 mt-2 text-sm">{plan.description}</p>
                 </div>
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, j) => (
-                    <li key={j} className="flex items-center gap-2 text-slate-300">
-                      <svg className="w-5 h-5 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    <li key={j} className={`flex items-center gap-2 ${plan.highlighted ? 'text-white/90' : 'text-gray-600'}`}>
+                      <svg className={`w-5 h-5 shrink-0 ${plan.highlighted ? 'text-white' : 'text-emerald-500'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                       </svg>
                       {feature}
                     </li>
@@ -288,10 +230,10 @@ export default function Home() {
                 </ul>
                 <a 
                   href="#contact" 
-                  className={`block text-center py-3 rounded-xl font-semibold transition ${
+                  className={`block text-center py-3.5 rounded-xl font-semibold transition ${
                     plan.highlighted
-                      ? 'bg-gradient-to-r from-violet-600 to-cyan-600 hover:opacity-90'
-                      : 'bg-slate-700 hover:bg-slate-600'
+                      ? 'bg-white text-orange-500 hover:bg-gray-50'
+                      : 'bg-gray-900 text-white hover:bg-gray-800'
                   }`}
                 >
                   {plan.cta}
@@ -303,37 +245,24 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
-            <p className="text-slate-400 text-lg">
-              Everything you need to know about our AI agents.
-            </p>
+      <section id="faq" className="py-20 px-6">
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Questions?</h2>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-3">
             {faqs.map((faq, i) => (
-              <div 
-                key={i} 
-                className="bg-slate-800/50 border border-slate-700 rounded-xl overflow-hidden"
-              >
+              <div key={i} className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
                 <button
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-800/80 transition"
+                  className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition"
                 >
-                  <span className="font-medium">{faq.question}</span>
-                  <svg 
-                    className={`w-5 h-5 text-slate-400 transition-transform ${openFaq === i ? 'rotate-180' : ''}`} 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
+                  <span className="font-semibold text-gray-900">{faq.q}</span>
+                  <span className={`text-2xl text-gray-400 transition-transform ${openFaq === i ? 'rotate-45' : ''}`}>+</span>
                 </button>
                 {openFaq === i && (
-                  <div className="px-6 pb-4 text-slate-400">
-                    {faq.answer}
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    {faq.a}
                   </div>
                 )}
               </div>
@@ -343,70 +272,61 @@ export default function Home() {
       </section>
 
       {/* Contact/CTA Section */}
-      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-900/50 to-violet-950/30">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to Put AI to Work?</h2>
-          <p className="text-slate-400 text-lg mb-10 max-w-2xl mx-auto">
-            Book a free consultation and we'll show you exactly how an AI agent can transform your workflows.
-          </p>
-          <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-8 max-w-xl mx-auto">
-            <form className="space-y-4">
-              <div className="grid sm:grid-cols-2 gap-4">
+      <section id="contact" className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-orange-400 via-pink-500 to-violet-500 rounded-[2rem] p-10 sm:p-16 text-center text-white shadow-2xl shadow-orange-200">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to automate?</h2>
+            <p className="text-white/80 text-lg mb-10 max-w-xl mx-auto">
+              Book a free 15-min call and we'll show you exactly what your agent could do.
+            </p>
+            <div className="bg-white rounded-2xl p-8 max-w-md mx-auto text-left">
+              <form className="space-y-4">
                 <input 
                   type="text" 
                   placeholder="Name" 
-                  className="w-full bg-slate-900/50 border border-slate-600 rounded-xl px-4 py-3 focus:outline-none focus:border-violet-500 transition"
+                  className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3.5 text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-400 transition"
                 />
                 <input 
                   type="email" 
                   placeholder="Email" 
-                  className="w-full bg-slate-900/50 border border-slate-600 rounded-xl px-4 py-3 focus:outline-none focus:border-violet-500 transition"
+                  className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3.5 text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-400 transition"
                 />
-              </div>
-              <input 
-                type="text" 
-                placeholder="Company (optional)" 
-                className="w-full bg-slate-900/50 border border-slate-600 rounded-xl px-4 py-3 focus:outline-none focus:border-violet-500 transition"
-              />
-              <textarea 
-                placeholder="Tell us about your use case..." 
-                rows={4}
-                className="w-full bg-slate-900/50 border border-slate-600 rounded-xl px-4 py-3 focus:outline-none focus:border-violet-500 transition resize-none"
-              />
-              <button 
-                type="submit" 
-                className="w-full bg-gradient-to-r from-violet-600 to-cyan-600 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition"
-              >
-                Book Free Consultation
-              </button>
-            </form>
-            <p className="text-slate-500 text-sm mt-4">
-              No spam. We'll reach out within 24 hours.
-            </p>
-          </div>
-          <div className="mt-10 flex flex-wrap justify-center gap-6 text-slate-400">
-            <a href="mailto:hello@robertai.dev" className="hover:text-white transition">hello@robertai.dev</a>
-            <span>•</span>
-            <a href="#" className="hover:text-white transition">Twitter</a>
-            <span>•</span>
-            <a href="#" className="hover:text-white transition">LinkedIn</a>
-            <span>•</span>
-            <a href="#" className="hover:text-white transition">Discord</a>
+                <textarea 
+                  placeholder="What would you automate?" 
+                  rows={3}
+                  className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3.5 text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-400 transition resize-none"
+                />
+                <button 
+                  type="submit" 
+                  className="w-full bg-gradient-to-r from-orange-400 to-pink-500 text-white py-4 rounded-xl font-semibold text-lg hover:shadow-lg transition"
+                >
+                  Book Free Call →
+                </button>
+              </form>
+              <p className="text-gray-400 text-sm mt-4 text-center">
+                No spam. Reply within 24h.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <footer className="py-10 px-6 border-t border-gray-100">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-gradient-to-br from-violet-500 to-cyan-500 rounded-md flex items-center justify-center font-bold text-xs">
-              RA
+            <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-pink-500 rounded-xl flex items-center justify-center font-bold text-white text-sm">
+              R
             </div>
-            <span className="font-semibold">RobertAI</span>
+            <span className="font-bold text-gray-900">RobertAI</span>
           </div>
-          <p className="text-slate-500 text-sm">
-            © {new Date().getFullYear()} RobertAI. All rights reserved.
+          <div className="flex gap-6 text-gray-500 text-sm">
+            <a href="mailto:hello@robertai.dev" className="hover:text-gray-900 transition">hello@robertai.dev</a>
+            <a href="#" className="hover:text-gray-900 transition">Twitter</a>
+            <a href="#" className="hover:text-gray-900 transition">LinkedIn</a>
+          </div>
+          <p className="text-gray-400 text-sm">
+            © {new Date().getFullYear()} RobertAI
           </p>
         </div>
       </footer>
